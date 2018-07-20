@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: o;
+}
+#conterner{
+	width: 800px;
+	margin: auto;
+	background-image: url(img/131001-alexander-mcqueen-tease_i90v5d.jpg);
+}
+#head{
+	padding: 10px;
+	width: 100%;
+}
+#banner1{
+	background-image: url(img/alexandermcqueenbanner_10.jpg);
+}

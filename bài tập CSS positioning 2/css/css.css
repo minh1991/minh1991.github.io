@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+html,body, #conterner{
+
+    width: 100%;
+    height: 100%;
+}
+#conten {
+    background-image: url('../img/mcqueen-hair.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2000px;
+    width: 100%;
+    background-size: auto;
+}
+#banner1 img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#banner1{
+    position: relative;
+}
+#banner2 img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#icon img{
+    position: absolute;
+    border-radius: 25%;
+    width: 13%;
+    top: 85%;
+    left: 44%;
+}
+#menu{
+    background: url('../img/Red-Roses-02.jpg');
+}
+#menu a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 26px;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    transition: all 1s;
+    width: 100%;
+}
+#menu a:hover{
+    transform: scale(2);
+}
+.box{
+    float: left;
+    position: relative;
+    margin: 0px 10px 10px 30px;
+}
+.box img{
+    width: 380px;
+    height: 592px;
+    margin: 13px;
+    padding: 0px;
+    border-radius: 20px;
+}
+.title{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: none;
+}
+.title h3{
+    margin: 0px 0px 15px 18px;
+    color: crimson
+}
+.title hr{
+    margin: 10px 14px 10px 13px;
+    border: 0px;
+    border-bottom: 1px solid crimson;
+}
+.title p{
+    margin: 0px 0px 23px 18px;
+    color: crimson;
+}
+.box:hover img{
+    opacity: 0.8;
+}
+.box:hover .title{
+    display: inherit;
+}
+#neo img{
+    width: 7%;
+    position: fixed;
+    bottom: 12px;
+    right: 76px;
+    transition: all 1s;
+}
+#neo img:hover{
+    transform: scale(1.5)
+}
