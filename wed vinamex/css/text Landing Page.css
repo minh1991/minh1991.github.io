@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+}
+.intro {
+   height: 100%;
+   width: 80%;
+   margin: auto;
+   background: url(../img/92c6461f8e1d92ca9c992648fdd8aab2.jpg) 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+   display: table;
+   top: 0;
+   animation: imgBackground 15s infinite;
+}
+@keyframes imgBackground{
+    0% {background-image: url(../img/92c6461f8e1d92ca9c992648fdd8aab2.jpg)}
+    25% {background-image: url(../img/1e9ec392c5f18cf0776aada3500591cb.jpg)}
+    50% {background-image: url(../img/WTLT8499.jpg)}
+    75% {background-image: url(../img/japan_japanese_traditonal_residence.jpg)}
+    100% {background-image: url(../img/92c6461f8e1d92ca9c992648fdd8aab2.jpg)}
+}
+.content {
+    display: block;
+    margin-top: 10%;
+    margin-left: 18%
+}
+.content img {
+    width: 22%;
+    text-align: center;
+}
+.content h1 {
+    font-family: 'raleway',sans-serif;
+    color: azure;
+    text-shadow: 0px 0px 300px #000;
+    width: 52%;
+    font-size: 220%;
+    margin-top: 0px;
+}
+.btn {
+    border-radius: 9px;
+    font-family: 'oswald', sans-serif;
+    color: rgb(243, 196, 237);
+    font-size: 100%;
+    display: block;
+    border: 3px solid rgb(243, 196, 237);
+    width: 25%;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+
+
