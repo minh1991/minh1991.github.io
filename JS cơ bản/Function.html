@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài Tập Function</title>
+</head>
+<body>
+    
+<!-- Bài 1. Viết 1 function tính bình phương của 1 số. -->
+    <script>        
+        function bai_1(x){
+            var binhphuong = x*x;
+            console.log (binhphuong);
+        }
+    </script>
+
+<!-- - Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c) -->
+    <script>
+        function bai_2(a,b,c){
+            var binhphuong = (3*a + 2*b -c)*(3*a + 2*b -c);
+            console.log (binhphuong);
+        }
+    </script>
+
+<!-- - Bài 3. Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi. -->
+    <script>
+        function bai_3(x){
+            var layra = x.substring(0,9);
+            var them = layra + "...";
+            console.log (them);
+        }
+    </script>
+<!-- - Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên. -->
+    <script>
+        function bai_4(x){
+            var chudau = x.charAt(0);
+            var viethoa = chudau.toUpperCase();
+            var conlai = x.slice (1);
+            console.log (viethoa + conlai);
+        }
+    </script>
+<!-- - Bài 5. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số. -->
+    <script>
+        function bai_5(x){
+            x.sort(function(a, b){return a - b});
+            console.log (x[0]);
+        }
+    </script>
+<!-- - Bài 6. Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên. -->
+    <script>
+        function bai_6(x){
+            x.sort(function(a,b){return a.localeCompare(b)});
+            document.write(x);
+        }
+    </script>
+
+<!-- - Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên. -->
+    <script>
+         var    
+            teacher = {
+            firstName: "Kim",
+            lastName: "Dung",
+            age: 30,
+            say: function(){}
+        }
+        var    
+            student = {
+            firstName: "Anh",
+            lastName: "Mai",
+            age: 16,
+            say: function(){}
+        }
+        var    
+            parent = {
+            firstName: "Anh",
+            lastName: "Nam",
+            age: 40,
+            say: function(){}
+        }
+        var aboutMe = function(){
+                return document.write ("Xin chào, tôi là " + this.firstName + this.lastName + ". Năm nay tôi " + this.age + "tuổi");
+            }
+        teacher.say = aboutMe;
+        student.say = aboutMe;
+        parent.say = aboutMe;
+        teacher.say();
+        student.say();
+        parent.say();
+
+    </script>
+</body>
+</html>
