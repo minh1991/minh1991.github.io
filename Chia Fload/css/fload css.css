@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+#page{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+}
+#content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.box-1{
+    display: inline;
+}
+.box11, .box12{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 80px;
+    float: left;
+    margin: 1%
+}
+.clear{
+    clear: both;
+}
+.box-2{
+    display: inline;
+}
+.box-2a{
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+.box21{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 270px;
+    float: left;
+    margin: 1%;
+}
+.box23, .box22{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 130px;
+    float: left;
+    margin: 1%;
+}
+.box-2b{
+    float: right;
+    width: 48%;
+    margin: 1%;
+}
+.box26{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 130px;
+    float: left;
+    margin: 1%;
+}
+.box24{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 270px;
+    float: right;
+    margin: 1%;
+}
+.box25{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 130px;
+    float: right;
+    margin: 1%;
+}
+.box-3{
+    background-color: darkgray;
+    padding: 0;
+    margin: 1% 20% ;
+    height: 50px;
+}
+.box-4{
+    display: inline;
+}
+.box41{
+    background-color: darkgray;
+    padding: 0;
+    width: 18%;
+    height: 200px;
+    float: left;
+    margin: 1%;
+}
+.box42{
+    background-color: darkgray;
+    padding: 0;
+    width: 28%;
+    height: 200px;
+    float: left;
+    margin: 1%;
+}
+.box43{
+    background-color: darkgray;
+    padding: 0;
+    width: 48%;
+    height: 200px;
+    float: left;
+    margin: 1%;
+}
+.box-5{
+    display: inline;
+}
+.box-5a{
+    display: block;
+    margin: 1%;
+    padding: 0;
+    width: 31.33%;
+    float: left;
+}
+.box5a1, .box5a2{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 4%;
+}
+.box5a3{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    float: left;
+    margin-top: 4%;
+}
+.box-5b{
+    display: block;
+    margin: 1%;
+    padding: 0;
+    width: 31.33%;
+    float: left;
+}
+.box5b1, .box5b2{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    float: left;
+    margin-top: 4%;
+}
+.box-5c{
+    display: block;
+    margin: 1%;
+    padding: 0;
+    width: 31.33%;
+    float: left;
+}
+.box5c1{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin-top: 4%;
+}
+.box5c2{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 4%;
+}
+.box5c3{
+    background-color: darkgray;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 4%;
+}
+.box-6{
+    margin-top: 10%;
+    display: inline;
+}
+.box61{
+    background-color: burlywood;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box62{
+    background-color:palevioletred;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box63{
+    background-color:red;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box64{
+    background-color: teal;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box65{
+    background-color: turquoise;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box66{
+    background-color: slateblue;
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box-7{
+    display: inline;
+}
+.box71{
+    float: left;
+    width: calc(100%/12);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box72{
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: purple;
+}
+.box73{
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box74{
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: pink
+}
+.box75{
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.box76{
+    float: left;
+    width: calc(100%/6);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color: darkolivegreen;
+}
+.box77{
+    float: left;
+    width: calc(100%/12);
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
