@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài Tập Function</title>
+</head>
+<body>
+    
+<!-- Bài 1. Viết 1 function tính bình phương của 1 số. -->
+    <script>        
+   function bai1(a,b){
+       if (typeof a =="number") {document.write("a là number");}
+       if (typeof b =="number") {document.write("b là number");}
+       if (a>b) {document.write("a là lớn nhất");}
+       if (a<b) {document.write("b là lớn nhất");}
+   }
+//- Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên dương (số Integer > 0), sau đó tính giai thừa và in ra kết quả
+    function bai2(n)  {
+        if (n>0) {
+        var ketqua = 1;
+        for (i=1 ; i<=n ; i++){
+            ketqua=ketqua * i; }
+    document.write(ketqua);}
+        if (n<=0){document.write("không thực hiện được");}
+    }
+//- Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+    function bai3(n){
+        var newArr = [];
+       newArr = n.sort(function(a, b){return a - b});
+        for (var i = 0; i < n.length; i++){
+        if (newArr[i]%2==0){document.write(newArr[i]);} 
+        }
+    }
+//- Bài 4. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
+var user = {
+            username: "username",
+            password: "secresgudfkyatwer78tqw83efgyukaweytr78623t54786tghatdsufytaudfygauskdyfguierfygqwuie6547t",
+             confirm: "secret"
+        }
+    function bai4(a){
+    
+    if (a.username !="" && a.username.length<=20) {document.write("hợp lệ");}else{document.write("không hợp lệ")}
+    if (a.password.length <=32 && a.password.length >= 6) {document.write("hợp lệ");}else{document.write("không hợp lệ")}
+    if (a.password.length==a.confirm.length) {document.write("hợp lệ");}else{document.write("không hợp lệ")}
+    }
+    
+    </script>
+</body>
+</html>
