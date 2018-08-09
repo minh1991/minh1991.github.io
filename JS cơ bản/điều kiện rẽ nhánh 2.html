@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài Tập Function</title>
+</head>
+<body>
+    <script>        
+    //- Bài 1. In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
+        var date = new Date();
+        var day = date.getDay();
+        var month = date.getMonth() +1 ;
+        if (month == 1 || month == 2 || month == 3){document.write("春 " + date)}
+        if (month == 4 || month == 5 || month == 6){document.write("夏 " + date)}
+        if (month == 7 || month == 8 || month == 9){document.write("秋 " + date)}
+        if (month == 10 || month == 11 || month == 12){document.write("冬 " + date)}
+        var year = date.getFullYear();
+    //- Bài 2. Viết hàm cắt chuỗi với tham số là 1 chuỗi bất kỳ. Kiểm tra xem tham số nhập vào có phải là chuỗi không, nếu là số thì convert sang chuỗi. Sau đó lại kiểm tra nếu chuỗi có độ dài nhỏ hơn 10 ký tự thì hiển thị toàn bộ chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì hiển thị 10 ký tự đầu tiên kèm theo dấu "...".
+    function bai2(x){
+            if (typeof x == "string" && x.length >10) { document.write( x.substring(0,10) + "...")}
+            if (typeof x == "number" && x.toString().length >10) {document.write ( x.toString().substring(0,10) + "...")}}
+    //- Bài 3. Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10). Hãy chuyển điểm số sang dạng chữ với điều kiện sau
+    function bai3(x){
+        if (x>=0 && x<3.9){document.write("Điểm F")}
+        if (x>=4 && x<5.4){document.write("Điểm D")}
+        if (x>=5.5 && x<6.9){document.write("Điểm C")}
+        if (x>=7 && x<8.4){document.write("Điểm C")}
+        if (x>=8.5 && x<=10){document.write("Điểm C")}
+    }
+    //- Bài 4. Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ tiếng khác nhau (tự chọn) với tham số truyền vào là mã quốc gia, sử dụng switch và mặc định dịch sang tiếng Việt.
+    function translate(x){
+       switch (x){
+           case "NP" : {document.write("नमस्ते");break;}
+           case "JP" : {document.write("こんにちは");break;}
+           case "KR" : {document.write("여보세요");break;}
+           case "FR" : {document.write("Bonjour");break;}
+           case "RU" : {document.write("Здравствуйте");break;}
+           default : {document.write("xin chào");break;}
+       } 
+    }
+    //- Bài 5. Cho 1 mảng gồm các giá trị true và false, ví dụ: [false, false, false, true, false, true, false, true]. Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
+    function    bai5(x){
+        document.write(x.indexOf(true)+1);
+    }
+    //- Bài 6. Chỉ sử dụng while hoặc for, hãy viết function in ra màn hình các số từ 1 đến 100. Với điều kiện những giá trị là chẵn sẽ có màu xanh, giá trị lẻ có màu đỏ.
+    function bai6(){
+    var i=0;
+    var a=1;
+    while (i<=100, a<=100)
+        {i=i+2;
+        document.write("<div style='color:red'>" +i+"</div>");
+        a=a+2;
+        document.write("<div style='color:blue'>" +a+"</div>");}    
+        console.log(bai6)
+    }
+    bai6();
+    </script>
+</body>
+</html>
