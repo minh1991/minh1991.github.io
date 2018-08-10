@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BT VẼ HÌNH</title>
+</head>
+<body>
+    <script>        
+        function retangle (a,b) {
+            let res='';
+            for(let i=0;i<a;i++){
+                for(let j=0;j<b;j++){
+                    res=res+"*";}
+                    res=res+"<br>";}
+            document.write(res);
+        } 
+    
+    
+    //Bài 1. Viết funciton printTrigangle(n), với n là số integer > 2, in ra màn hình 1 hình tam giác vuông cân có kích thước n.
+        function printTrigangle (n) {
+            let res='';
+            for(let i=0;i<n;i++){
+                for(let j=0;j<i+1;j++){
+                    res=res+"*";}
+                    res=res+"<br>";}
+            document.write(res);
+        }
+  
+  
+  
+    //Bài 2. Viết function printEmptyRectangle(a, b), với a và b là 2 số integer > 3, in ra một hình chữ nhật rỗng có kích thước a x b. 
+        function printEmptyRectangle (a,b) {
+            let res='';
+            for(let i=0;i<a;i++){
+                for(let j=0;j<b;j++){
+                    if(i==0||i==a-1||j==0||j==b-1){
+                        res=res+"*";}
+                    else{
+                        res=res+"&nbsp;&nbsp;";}
+                }
+                    res=res+"<br>";
+                }
+            document.write(res);
+        } 
+    
+    //Bài 3. Viết function printSpecialTrigangle(n), với n là số integer > 1, in ra hình tam giác cân ngược với chiều cao bằng n.
+        // function printSpecialTrigangle (n) {
+        //     let res='';
+        //     for(let i=1;i<=n;i++){
+               
+        //         for(let j=1;j<=n-i;j++){
+        //             res=res+"&nbsp;&nbsp;";}
+        //         for(let j=1;j<=2*i-1;j++){
+        //             res=res+"*";}
+        //             res=res+"<br>";}
+        //e     document.write(res);
+         // }
+        function printSpecialTrigangle(n) {
+ 		 	let res = "";
+             for (let i=n;i>=1;i--){
+                 for (let j=0; j<=n-i;j++){
+                 res=res+"&nbsp;&nbsp;";}
+                
+                 for(let j=1; j<(i*2);j++){
+                res=res+"*";}
+                res=res+"<br>"; }                   
+             document.write(res)
+             } 
+
+    //Bài 4. Viết function printX(n), với n là số integer > 3 và là số lẻ, in ra hình chữ X có chiều cao bằng n.
+        function printX(n){
+            let res="";
+            for (let i = 0; i < n; i ++) {
+                for (let j = 0; j < n; j++) {
+                    if (i==j || i+j==n-1){res=res+"*";}
+                    else{res=res+"&nbsp;&nbsp;";}
+                    }
+                    res=res+"<br>";
+                }
+            document.write(res)
+            }
+    //Bài 5. Viết function printButterfly(n), với n là số integer > 3 và là số lẻ, in ra hình con bướm có chiều cao bằng n.
+        function printButterfly(n){
+            let res="";
+            let nuatren = n/2;
+            for (let i=0; i<nuatren; i++){
+                let trai = i+1;
+                let phai = n-i-1;
+                for (let j=0; j<trai; j++){res=res+"*";}
+                for (let j=trai; j<phai+1; j++){res=res+"&nbsp;&nbsp;";}
+                for (let j=phai; j<n; j++){res=res+"*";}
+                res=res+"<br>";
+            }
+            for (let i=nuatren; i<n; i++){
+                for (let j=0; j<n-i; j++){res=res+"*";}
+                for (let j=n-i; j<i; j++){res=res+"&nbsp;&nbsp;";} 
+                for (let j=i; j<n; j++){res=res+"*";}
+                res=res+"<br>"; 
+            } 
+            document.write(res)
+        }
+            
+    </script>
+</body>
+</html>
