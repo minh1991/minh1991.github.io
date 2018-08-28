@@ -1,0 +1,72 @@
+h1 {}
+
+h1 {
+    margin: 3%;
+}
+
+body {
+    margin-top: 10%;
+    margin-left:  25%;
+    margin-right:  25%;
+    text-align: center;
+}
+
+input[type="text"] {
+}
+
+input[type="text"] {
+    margin: 7px;
+    font-size: 22px;
+    background: rgba(130, 204, 221,0.3);
+    border-radius: 20px;
+}
+
+h2 {
+    margin: 2%;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    display: inline-block;
+}
+
+input[type="radio"] {
+}
+
+input.ngay-sinhs {
+    font-size: 22px;
+    border-radius: 20px;
+    background: rgba(130, 204, 221,0.3);
+}
+
+label {
+    font-size: 22px;
+}
+
+input[type="submit"] {
+    font-size: 29px;
+    background: #e55039;
+    border-radius: 20px;
+}
+input.ngay-sinhs {
+    font-size: 22px;
+    border-radius: 20px;
+    background: rgba(130, 204, 221,0.3);
+}
+
+label {
+    font-size: 22px;
+}
+
+input[type="submit"] {
+    font-size: 29px;
+    background: #e55039;
+    border-radius: 20px;
+}
+
+input.password {
+    margin: 7px;
+    font-size: 22px;
+    background: rgba(130, 204, 221,0.3);
+    border-radius: 20px;
+}
