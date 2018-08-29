@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="Register form.css"> 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Đăng ký tài khoản</h1>
-    <form action="/Users/Asus/Desktop/minh1991.github.io/form/bao.html" target="_blank">
-        <input type="text" name="name" placeholder="Họ và tên" class="name"/></br>
-        <input type="text" name="dia-chi" placeholder="Địa chỉ" class="dia-chi"/></br>
-        <input type="text" name="mail" placeholder="Email" class="mail"/></br>
-        <input type="text" name="phone" placeholder="Điện thoại" class="phone"/></br>
-        <input type="password" name="password" placeholder="password" class="password"/></br>
+    <form action="/Users/Asus/Desktop/minh1991.github.io/form/bao.html" target="_blank" id="form-register">
+        <input type="text" name="name" placeholder="Họ và tên" id="name"/>
+        <span class="error"></span>
+    </br>
+        <input type="text" name="dia-chi" placeholder="Địa chỉ" id="dia-chi"/><span class="error"></span></br>
+        <input type="text" name="mail" placeholder="Email" id="email"/><span class="error"></span></br>
+        <input type="text" name="phone" placeholder="Điện thoại" id="phone"/><span class="error"></span></br>
+        <input type="password" name="password" placeholder="password" id="password"/></br>
         <h2>Ngày sinh</h2>
         <input type="date" name="ngay-sinh" class="ngay-sinhs"/></br>
         <h2>Giới tính</h2>
         <input type="radio" name="gender" value="nam"/><label>Nam</label>
         <input type="radio" name="gender" value="nu"/><label>Nữ</label></br>
-        <input type="submit" value="submit">
+        <input type="submit" value="dangnhap">
     </form>
+    <script type="text/javascript" src="Register form.js"></script>
 </body>
 </html>

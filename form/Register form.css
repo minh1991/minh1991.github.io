@@ -70,3 +70,13 @@ input.password {
     background: rgba(130, 204, 221,0.3);
     border-radius: 20px;
 }
+input#password {
+    margin: 7px;
+    font-size: 22px;
+    background: rgba(130, 204, 221,0.3);
+    border-radius: 20px;
+}
+
+span.error {
+    color: red;
+}
